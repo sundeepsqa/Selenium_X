@@ -97,10 +97,10 @@ public class DemoOrgTest {
 
 		try {
 			Assert.assertEquals((Keyword.driver.getTitle()), "Xero | Invoices | Demo Company (NZ)", "Test Failed");
-			System.out.println("Test Passed");
+			System.out.println("Test Passed: Repeating invoice created");
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("Test Failed");
+			System.out.println("Test Failed: Repeating invoice creation failed");
 		}
 			
 		}
