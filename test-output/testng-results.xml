@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Xero_test" duration-ms="56174" started-at="2015-02-22T05:59:11Z" finished-at="2015-02-22T06:00:07Z">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="23863" started-at="2015-02-22T05:59:11Z" finished-at="2015-02-22T05:59:35Z">
+      <class name="com.selenium.TestSuite.LoginTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.selenium.TestSuite.LoginTest@24273305]" name="login" duration-ms="23839" started-at="2015-02-22T18:59:11Z" finished-at="2015-02-22T18:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.selenium.TestSuite.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="DemoOrgTest" duration-ms="32231" started-at="2015-02-22T05:59:35Z" finished-at="2015-02-22T06:00:07Z">
+      <class name="com.selenium.TestSuite.DemoOrgTest">
+        <test-method status="PASS" signature="DemoTest()[pri:0, instance:com.selenium.TestSuite.DemoOrgTest@483bf400]" name="DemoTest" duration-ms="32230" started-at="2015-02-22T18:59:35Z" finished-at="2015-02-22T19:00:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoTest -->
+      </class> <!-- com.selenium.TestSuite.DemoOrgTest -->
+    </test> <!-- DemoOrgTest -->
+  </suite> <!-- Xero_test -->
+</testng-results>

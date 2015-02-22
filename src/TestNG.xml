@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Xero_test" verbose="1" >
+
+  <test name="LoginTest" >
+    <classes>
+       <class name="com.selenium.TestSuite.LoginTest" />
+    </classes>
+  </test>
+ 
+ <test name="DemoOrgTest" >
+    <classes>
+       <class name="com.selenium.TestSuite.DemoOrgTest" />
+    </classes>
+  </test>
+  
+    
+</suite>

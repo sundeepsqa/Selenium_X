@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Xero_test]">
+  <test name="DemoOrgTest(failed)">
+    <classes>
+      <class name="com.selenium.TestSuite.DemoOrgTest">
+        <methods>
+          <include name="DemoTest"/>
+        </methods>
+      </class> <!-- com.selenium.TestSuite.DemoOrgTest -->
+    </classes>
+  </test> <!-- DemoOrgTest(failed) -->
+</suite> <!-- Failed suite [Xero_test] -->
