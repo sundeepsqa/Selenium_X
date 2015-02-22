@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Xero_test]">
-  <test name="DemoOrgTest(failed)">
+  <test name="CreateInvoice(failed)">
     <classes>
-      <class name="com.selenium.TestSuite.DemoOrgTest">
+      <class name="com.selenium.TestSuite.CreateInvoice">
         <methods>
           <include name="DemoTest"/>
         </methods>
-      </class> <!-- com.selenium.TestSuite.DemoOrgTest -->
+      </class> <!-- com.selenium.TestSuite.CreateInvoice -->
     </classes>
-  </test> <!-- DemoOrgTest(failed) -->
+  </test> <!-- CreateInvoice(failed) -->
+  <test name="EditInvoice(failed)">
+    <classes>
+      <class name="com.selenium.TestSuite.EditInvoice">
+        <methods>
+          <include name="EditRI"/>
+        </methods>
+      </class> <!-- com.selenium.TestSuite.EditInvoice -->
+    </classes>
+  </test> <!-- EditInvoice(failed) -->
 </suite> <!-- Failed suite [Xero_test] -->

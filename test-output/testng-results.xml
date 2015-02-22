@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Xero_test" duration-ms="56174" started-at="2015-02-22T05:59:11Z" finished-at="2015-02-22T06:00:07Z">
+  <suite name="Xero_test" duration-ms="90624" started-at="2015-02-22T10:52:23Z" finished-at="2015-02-22T10:53:54Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="23863" started-at="2015-02-22T05:59:11Z" finished-at="2015-02-22T05:59:35Z">
+    <test name="LoginTest" duration-ms="30014" started-at="2015-02-22T10:52:23Z" finished-at="2015-02-22T10:52:53Z">
       <class name="com.selenium.TestSuite.LoginTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.selenium.TestSuite.LoginTest@24273305]" name="login" duration-ms="23839" started-at="2015-02-22T18:59:11Z" finished-at="2015-02-22T18:59:35Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.selenium.TestSuite.LoginTest@24273305]" name="login" duration-ms="29980" started-at="2015-02-22T23:52:23Z" finished-at="2015-02-22T23:52:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- com.selenium.TestSuite.LoginTest -->
     </test> <!-- LoginTest -->
-    <test name="DemoOrgTest" duration-ms="32231" started-at="2015-02-22T05:59:35Z" finished-at="2015-02-22T06:00:07Z">
-      <class name="com.selenium.TestSuite.DemoOrgTest">
-        <test-method status="PASS" signature="DemoTest()[pri:0, instance:com.selenium.TestSuite.DemoOrgTest@483bf400]" name="DemoTest" duration-ms="32230" started-at="2015-02-22T18:59:35Z" finished-at="2015-02-22T19:00:07Z">
+    <test name="CreateInvoice" duration-ms="43458" started-at="2015-02-22T10:52:53Z" finished-at="2015-02-22T10:53:37Z">
+      <class name="com.selenium.TestSuite.CreateInvoice">
+        <test-method status="PASS" signature="DemoTest()[pri:0, instance:com.selenium.TestSuite.CreateInvoice@483bf400]" name="DemoTest" duration-ms="43456" started-at="2015-02-22T23:52:53Z" finished-at="2015-02-22T23:53:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DemoTest -->
-      </class> <!-- com.selenium.TestSuite.DemoOrgTest -->
-    </test> <!-- DemoOrgTest -->
+      </class> <!-- com.selenium.TestSuite.CreateInvoice -->
+    </test> <!-- CreateInvoice -->
+    <test name="EditInvoice" duration-ms="17078" started-at="2015-02-22T10:53:37Z" finished-at="2015-02-22T10:53:54Z">
+      <class name="com.selenium.TestSuite.EditInvoice">
+        <test-method status="PASS" signature="EditRI()[pri:0, instance:com.selenium.TestSuite.EditInvoice@5474c6c]" name="EditRI" duration-ms="17078" started-at="2015-02-22T23:53:37Z" finished-at="2015-02-22T23:53:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditRI -->
+      </class> <!-- com.selenium.TestSuite.EditInvoice -->
+    </test> <!-- EditInvoice -->
   </suite> <!-- Xero_test -->
 </testng-results>

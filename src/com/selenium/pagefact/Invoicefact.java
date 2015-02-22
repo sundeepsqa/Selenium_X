@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
-public class DemoOrg {
+public class Invoicefact {
 	
 	@FindBy(xpath="//a[@id='ext-gen1031']")
 	public WebElement Demo_company_link;
@@ -74,6 +74,23 @@ public class DemoOrg {
 	
 	@FindBy(xpath="//*[@id='title']")
 	public WebElement assert_text;
+	
+	@FindBy(xpath="//a[contains(.,'New Repeating Invoice')]")
+	public WebElement validation;
+	
+	@FindBy(xpath="//a[contains(.,'Sandy')]")
+	public WebElement editRI;
+	
+	@FindBy(xpath="//button[@id='addNewLineItemButton']")
+	public WebElement addNewLineItemButton;
+	
+	@FindBy(xpath="//a[@id='TemplateDropDown_toggle']")
+	public WebElement branding;
+	
+	@FindBy(xpath="//*[@id='TemplateDropDown_suggestions']/div/div[3]")
+	public WebElement orange_brand;
+	
+	
 	
 	
 	

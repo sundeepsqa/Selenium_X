@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 
 import com.selenium.lib.Constant;
 import com.selenium.lib.Keyword;
-import com.selenium.pagefact.DemoOrg;
+import com.selenium.pagefact.Invoicefact;
 
-public class DemoOrgTest {
+public class CreateInvoice {
 	
 	@Test
 	public void DemoTest() throws Exception{
 		
-		DemoOrg demo = PageFactory.initElements(Keyword.driver, DemoOrg.class);
+		Invoicefact demo = PageFactory.initElements(Keyword.driver, Invoicefact.class);
 		
 		//Keyword.clickelmt(demo.Demo_company_link);
 		
@@ -64,7 +64,7 @@ public class DemoOrgTest {
 		Keyword.clickelmt(demo.due_date_select);
 		
 		wait.until(ExpectedConditions.visibilityOf(demo.InvoiceTo));
-		Keyword.enterTextvalue(demo.InvoiceTo, "Sundeep");
+		Keyword.enterTextvalue(demo.InvoiceTo, "Sandy");
 		
 		wait.until(ExpectedConditions.elementToBeClickable(demo.Item1));
 		Keyword.clickelmt(demo.Item1);
@@ -89,11 +89,13 @@ public class DemoOrgTest {
 		Keyword.enterKey(demo.Item_dd, Keys.ARROW_DOWN);
 		Keyword.enterKey(demo.Item_dd, Keys.ENTER);
 		
-		wait.until(ExpectedConditions.elementToBeClickable(demo.Approve));
-		Keyword.clickelmt(demo.Approve);
+		wait.until(ExpectedConditions.elementToBeClickable(demo.saveAsDraft));
+		Keyword.clickelmt(demo.saveAsDraft);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(demo.Save));
 		Keyword.clickelmt(demo.Save);
+		
+		wait.until(ExpectedConditions.visibilityOf(demo.validation));
 
 		try {
 			Assert.assertEquals((Keyword.driver.getTitle()), "Xero | Invoices | Demo Company (NZ)", "Test Failed");

@@ -70,6 +70,7 @@ public class Keyword extends Constant{
 //			System.out.println(element);
 			element.sendKeys(text);
 			
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Don't know where to enter text :(");
@@ -137,6 +138,20 @@ public class Keyword extends Constant{
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Can't find key :(");
+			throw(e);
+		}
+	}
+
+
+	public static void cleartext(WebElement element) {
+		// TODO Auto-generated method stub
+		try {
+//			System.out.println(element);
+			element.clear();
+		} catch (Exception e) {
+			// TODO: handle exception
+//			System.out.println(element);
+			System.out.println("Unable to clean :(");
 			throw(e);
 		}
 	}

@@ -8,11 +8,18 @@
     </classes>
   </test>
  
- <test name="DemoOrgTest" >
+ <test name="CreateInvoice" >
     <classes>
-       <class name="com.selenium.TestSuite.DemoOrgTest" />
+       <class name="com.selenium.TestSuite.CreateInvoice" />
     </classes>
   </test>
   
     
+ <test name="EditInvoice" >
+    <classes>
+       <class name="com.selenium.TestSuite.EditInvoice" />
+    </classes>
+ </test>
+ 
+ 
 </suite>
