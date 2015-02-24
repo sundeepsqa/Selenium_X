@@ -90,6 +90,15 @@ public class Invoicefact {
 	@FindBy(xpath="//*[@id='TemplateDropDown_suggestions']/div/div[3]")
 	public WebElement orange_brand;
 	
+	@FindBy(xpath="//input[@id='subTotal']")
+	public WebElement subTotal;
+	
+	@FindBy(xpath="//input[@id='TAXTotal GST 15.00%']")
+	public WebElement gst;
+	
+	@FindBy(xpath="//input[@id='invoiceTotal']")
+	public WebElement Total;
+	
 	
 	
 	

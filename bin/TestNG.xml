@@ -14,12 +14,20 @@
     </classes>
   </test>
   
+   <test name="ValidationTest" >
+    <classes>
+       <class name="com.selenium.TestSuite.ValidationTest" />
+    </classes>
+ </test>
+  
     
  <test name="EditInvoice" >
     <classes>
        <class name="com.selenium.TestSuite.EditInvoice" />
     </classes>
  </test>
+ 
+
  
  
 </suite>

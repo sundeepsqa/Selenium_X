@@ -103,6 +103,7 @@ public class CreateInvoice {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Test Failed: Repeating invoice creation failed");
+			Keyword.takeScreenshot();
 		}
 			
 		}

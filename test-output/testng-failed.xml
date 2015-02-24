@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Xero_test]">
-  <test name="CreateInvoice(failed)">
+  <test name="Validation_Test(failed)">
     <classes>
-      <class name="com.selenium.TestSuite.CreateInvoice">
+      <class name="com.selenium.TestSuite.Validation_Test">
         <methods>
-          <include name="DemoTest"/>
+          <include name="validate"/>
         </methods>
-      </class> <!-- com.selenium.TestSuite.CreateInvoice -->
+      </class> <!-- com.selenium.TestSuite.Validation_Test -->
     </classes>
-  </test> <!-- CreateInvoice(failed) -->
+  </test> <!-- Validation_Test(failed) -->
   <test name="EditInvoice(failed)">
     <classes>
       <class name="com.selenium.TestSuite.EditInvoice">

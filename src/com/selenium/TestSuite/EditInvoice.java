@@ -30,16 +30,8 @@ public class EditInvoice {
 	  Keyword.enterTextvalue(demo.InvoiceTo, "Sundeep");
 		
 	  wait.until(ExpectedConditions.elementToBeClickable(demo.addNewLineItemButton));
-	  Keyword.clickelmt(demo.addNewLineItemButton);
-	  
-	  wait.until(ExpectedConditions.elementToBeClickable(demo.Item_dd));
-	  Keyword.clickelmt(demo.Item_dd);
-	 
-	  wait.until(ExpectedConditions.visibilityOf(demo.Item_dd));
-	  Keyword.enterKey(demo.Item_dd, Keys.ARROW_DOWN);
-	  Keyword.enterKey(demo.Item_dd, Keys.ARROW_DOWN);
-	  Keyword.enterKey(demo.Item_dd, Keys.ENTER);
-	  
+	  Keyword.clickelmt(demo.addNewLineItemButton);	  
+  
 	  wait.until(ExpectedConditions.elementToBeClickable(demo.Approve));
 	  Keyword.clickelmt(demo.Approve);
 	  
@@ -60,6 +52,7 @@ public class EditInvoice {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Test Failed: Edit failed");
+			Keyword.takeScreenshot();
 		}
 	  
   }

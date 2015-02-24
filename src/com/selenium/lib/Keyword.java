@@ -1,6 +1,11 @@
 package com.selenium.lib;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -125,7 +130,6 @@ public class Keyword extends Constant{
 			System.out.println("Drop down list not found:(");
 			throw(e);
 		}
-		
 	}
 
 
@@ -153,7 +157,25 @@ public class Keyword extends Constant{
 //			System.out.println(element);
 			System.out.println("Unable to clean :(");
 			throw(e);
+			
 		}
+	}
+
+
+	public static void takeScreenshot() {
+		// TODO Auto-generated method stub
+		
+		try {
+			System.out.println("Taking screenshot");
+			File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			
+			FileUtils.copyFile(screenshot, new File("F:\\image.jpg"));
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Screenshot failure");
+		}
+		
 	}
 
 
