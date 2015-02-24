@@ -5,9 +5,10 @@ Project Structure:
  
 The TestNG Automation test framework is created using Selenium, Java programming and Page Object pattern aiming to test the “Repeating Invoice” UI component.
 Framework contains Pagefactory, reusable library, test suite which is broken down into tests for Logging in, Invoice creation and Editing the Invoice.
--          Login test validates the user login functionality by logging into NZ demo site from Xero marketing site.
--          Once logged in, Invoice creation test validates the functionality of navigating to Sales page à Repeating Invoice page and creating a Repeating Invoice successfully.
--          On successful creation of a Repeating invoice, Edit Invoice test validates the changes made to the created invoice from the previous step and is saved successfully.
+-          LoginTest validates the user login functionality by logging into NZ demo site from Xero marketing site.
+-          Once logged in, CreateInvoice test validates if the user is a new user or an existing user and the functionality of navigating to Sales page, Repeating Invoice page and creating a Repeating Invoice successfully.
+-          On successful creation of a Repeating Invoice, calculations of SubTotal, GST and Total Invoice are validated. 
+-          EditInvoice test validates the changes made to the created invoice from CreateInvoice test and is saved successfully.
 -          Test is executed as a Test suite using TestNG.xml file.
 
  
