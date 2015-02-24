@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Invoicefact {
 	
-	@FindBy(xpath="//a[@id='ext-gen1031']")
+	@FindBy(xpath="html/body/div[4]/form/div/p/a[1]")
 	public WebElement Demo_company_link;
   
 	@FindBy(xpath="//a[@id='Accounts']")

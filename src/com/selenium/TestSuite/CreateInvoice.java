@@ -21,10 +21,19 @@ public class CreateInvoice {
 		
 		Invoicefact demo = PageFactory.initElements(Keyword.driver, Invoicefact.class);
 		
-		//Keyword.clickelmt(demo.Demo_company_link);
 		
 		WebDriverWait wait = new WebDriverWait(Keyword.driver, 3000);
 		
+		//System.out.println();
+		
+		try {
+			if((demo.Demo_company_link).isDisplayed()){
+				wait.until(ExpectedConditions.elementToBeClickable(demo.Demo_company_link));
+				Keyword.clickelmt(demo.Demo_company_link);
+				}
+		} catch (Exception e) {
+			// TODO: handle exception		
+		 {
 		wait.until(ExpectedConditions.elementToBeClickable(demo.Accounts_tab));
 		Keyword.clickelmt(demo.Accounts_tab);
 		
@@ -99,13 +108,15 @@ public class CreateInvoice {
 
 		try {
 			Assert.assertEquals((Keyword.driver.getTitle()), "Xero | Invoices | Demo Company (NZ)", "Test Failed");
-			System.out.println("Test Passed: Repeating invoice created");
-		} catch (Exception e) {
+			System.out.println("Test Passed: Repeating invoice created\n");
+		} catch (Exception e1) {
 			// TODO: handle exception
-			System.out.println("Test Failed: Repeating invoice creation failed");
+			System.out.println("Test Failed: Repeating invoice creation failed\n");
 			Keyword.takeScreenshot();
 		}
-			
+		
 		}
-	
+		
+		}
+	}
 }
